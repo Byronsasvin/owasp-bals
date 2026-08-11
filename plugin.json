@@ -1,9 +1,8 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "owasp-bals",
   "version": "1.0.0",
   "displayName": "OWASP BALS - Marco de Pruebas de Seguridad",
-  "description": "Marco profesional de pruebas de seguridad OWASP Top Ten 2021 para aplicaciones web, con scoring CVSS v3.1 y mapeo de cumplimiento normativo",
+  "description": "Marco profesional de pruebas de seguridad OWASP Top Ten 2021 para aplicaciones web. Incluye scoring CVSS v3.1, mapeo de cumplimiento normativo (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68 items de checklist, 25+ payloads reales y generación de reportes ejecutivos. Diseñado para equipos de desarrollo y seguridad en Latinoamérica.",
   "license": "GPL-3.0-or-later",
   "author": {
     "name": "Byron Antonio Lainez Sasvin",
@@ -17,18 +16,29 @@
   "homepage": "https://github.com/Byronsasvin/owasp-bals",
   "keywords": [
     "owasp",
+    "security",
     "seguridad",
     "pruebas",
     "testing",
     "penetración",
+    "pentest",
     "vulnerabilidades",
+    "vulnerabilities",
     "cvss",
     "cumplimiento",
     "compliance",
     "pci-dss",
     "gdpr",
+    "hipaa",
+    "nist",
+    "iso27001",
     "evaluación",
-    "auditoría"
+    "auditoría",
+    "inyección",
+    "injection",
+    "xss",
+    "autenticación",
+    "aws"
   ],
   "capabilities": {
     "agentSkills": true,
@@ -43,6 +53,5 @@
     "email": "security@byronlainez.click",
     "github_issues": "https://github.com/Byronsasvin/owasp-bals/issues",
     "discussions": "https://github.com/Byronsasvin/owasp-bals/discussions"
-  },
-  "agentPluginsVersion": "1.0.0"
+  }
 }
