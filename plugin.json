@@ -1,7 +1,6 @@
 {
   "name": "owasp-bals",
   "version": "1.0.2",
-  "displayName": "OWASP BALS - Security Testing Power",
   "description": "Professional OWASP Top Ten 2021 security testing framework for web applications. Includes CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation. Full Spanish support for Latin America.",
   "license": "GPL-3.0-or-later",
   "author": {
@@ -9,11 +8,8 @@
     "email": "security@byronlainez.click",
     "url": "https://byronlainez.click"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Byronsasvin/owasp-bals.git"
-  },
   "homepage": "https://github.com/Byronsasvin/owasp-bals",
+  "repository": "https://github.com/Byronsasvin/owasp-bals.git",
   "keywords": [
     "owasp",
     "security",
@@ -43,15 +39,5 @@
   "capabilities": {
     "agentSkills": true,
     "mcpServers": false
-  },
-  "social": {
-    "github": "https://github.com/Byronsasvin",
-    "instagram": "https://instagram.com/bals.sec",
-    "website": "https://byronlainez.click"
-  },
-  "contact": {
-    "email": "security@byronlainez.click",
-    "github_issues": "https://github.com/Byronsasvin/owasp-bals/issues",
-    "discussions": "https://github.com/Byronsasvin/owasp-bals/discussions"
   }
 }
