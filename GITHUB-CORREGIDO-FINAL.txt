@@ -1,0 +1,149 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║   OWASP BALS - GITHUB CORREGIDO                                             ║
+║                                                                              ║
+║   GitHub: @Byronsasvin (CORRECTO)                                            ║
+║   Instagram: @bals.sec (confirmado)                                          ║
+║   Email: security@byronlainez.click                                          ║
+║   Website: byronlainez.click                                                 ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+CAMBIO FINAL REALIZADO
+═════════════════════════════════════════════════════════════════════════════
+
+✗ REMOVIDO: @bals-sec (incorrecto)
+✓ AGREGADO: @Byronsasvin (GitHub personal correcto)
+✓ CONFIRMADO: @bals.sec (Instagram)
+✓ CONFIRMADO: security@byronlainez.click (Email)
+✓ CONFIRMADO: byronlainez.click (Website)
+
+═════════════════════════════════════════════════════════════════════════════
+
+DATOS FINALES CORRECTOS
+═════════════════════════════════════════════════════════════════════════════
+
+Nombre:       Byron Antonio Lainez Sasvin
+GitHub:       https://github.com/Byronsasvin
+Instagram:    https://instagram.com/bals.sec
+Email:        security@byronlainez.click
+Website:      https://byronlainez.click
+
+═════════════════════════════════════════════════════════════════════════════
+
+ARCHIVOS ACTUALIZADOS - TODAS LAS REFERENCIAS
+═════════════════════════════════════════════════════════════════════════════
+
+✓ plugin.json
+  ├─ author.github: "Byronsasvin"
+  ├─ repository.url: "https://github.com/Byronsasvin/owasp-bals.git"
+  ├─ homepage: "https://github.com/Byronsasvin/owasp-bals"
+  ├─ bugs.url: "https://github.com/Byronsasvin/owasp-bals/issues"
+  ├─ social.github: "https://github.com/Byronsasvin"
+  ├─ contact.github_issues: "https://github.com/Byronsasvin/owasp-bals/issues"
+  └─ contact.discussions: "https://github.com/Byronsasvin/owasp-bals/discussions"
+
+✓ README.md
+  ├─ Badges de License y Version
+  ├─ Git clone URL
+  ├─ Sección Créditos
+  ├─ Tabla de Soporte (Issues y Discussions)
+  └─ Footer
+
+✓ SECURITY.md
+  ├─ GitHub Discussions link
+  └─ GitHub Issues link
+
+✓ CONTRIBUTING.md
+  ├─ GitHub Discussions links
+  └─ GitHub profile link
+
+✓ CHANGELOG.md
+  ├─ Contributors con link correcto
+  └─ Todos los GitHub links
+
+✓ templates/
+  ├─ reporte-ejecutivo.md
+  ├─ hallazgo-tecnico.md
+  └─ plan-remediacion.md
+
+═════════════════════════════════════════════════════════════════════════════
+
+VERIFICACIÓN DE CAMBIOS
+═════════════════════════════════════════════════════════════════════════════
+
+Total de referencias actualizadas: 20+
+Todos los links apuntan a: https://github.com/Byronsasvin/owasp-bals
+
+Antes:  https://github.com/bals-sec/owasp-bals
+Ahora:  https://github.com/Byronsasvin/owasp-bals
+
+═════════════════════════════════════════════════════════════════════════════
+
+DÓNDE DESCARGAR
+═════════════════════════════════════════════════════════════════════════════
+
+Carpeta completa actualizada:
+  /mnt/user-data/outputs/owasp-bals-repo-completa/
+
+Plugin manifest actualizado:
+  /mnt/user-data/outputs/owasp-bals-plugin.json
+
+═════════════════════════════════════════════════════════════════════════════
+
+GIT COMMANDS READY
+═════════════════════════════════════════════════════════════════════════════
+
+cd owasp-bals-repo-completa
+git init
+git add .
+git commit -m "Initial: OWASP BALS Security Testing Framework"
+git remote add origin https://github.com/Byronsasvin/owasp-bals.git
+git push -u origin main
+git tag v1.0.0
+git push origin v1.0.0
+
+═════════════════════════════════════════════════════════════════════════════
+
+REGISTRARSE EN MARKETPLACES
+═════════════════════════════════════════════════════════════════════════════
+
+1. Kiro Marketplace
+   https://kiro.aws.amazon.com/marketplace
+   
+   Ingresar:
+   - Nombre: owasp-bals
+   - URL del repo: https://github.com/Byronsasvin/owasp-bals
+   - Plugin.json: https://raw.githubusercontent.com/Byronsasvin/owasp-bals/main/plugin.json
+
+2. Agent Plugins Registry
+   https://github.com/agentplugins/agent-plugins-registry
+   
+   Hacer PR con carpeta:
+   plugins/security/owasp-bals.json
+
+═════════════════════════════════════════════════════════════════════════════
+
+RESUMEN FINAL
+═════════════════════════════════════════════════════════════════════════════
+
+GitHub:    https://github.com/Byronsasvin       (CORRECTO)
+Instagram: https://instagram.com/bals.sec       (confirmado)
+Email:     security@byronlainez.click           (confirmado)
+Website:   https://byronlainez.click            (confirmado)
+
+Repositorio: https://github.com/Byronsasvin/owasp-bals
+Todos los archivos actualizados
+100% listo para hacer git push
+
+═════════════════════════════════════════════════════════════════════════════
+
+¡LISTO PARA PUBLICAR!
+
+Descarga: /mnt/user-data/outputs/owasp-bals-repo-completa/
+
+Ejecuta los git commands y registrate en los marketplaces.
+
+Tu OWASP BALS estará disponible globalmente en 1-2 semanas.
+
+═════════════════════════════════════════════════════════════════════════════
