@@ -1,9 +1,9 @@
 {
   "kiroid": "1.0.0",
   "name": "OWASP BALS",
-  "displayName": "OWASP BALS - Security Testing Power",
-  "description": "Professional OWASP Top Ten 2021 security testing framework for Kiro IDE",
-  "category": "Security",
+  "displayName": "OWASP BALS - Poder de Pruebas de Seguridad",
+  "description": "Marco profesional de pruebas de seguridad OWASP Top Ten 2021 para Kiro IDE, con scoring CVSS v3.1 e integración con AWS",
+  "category": "Seguridad",
   "type": "power",
   "author": {
     "name": "Byron Antonio Lainez Sasvin",
@@ -45,65 +45,65 @@
     },
     "professional_reporting": {
       "enabled": true,
-      "formats": ["Executive Summary", "Technical Details", "Remediation Plan"]
+      "formats": ["Resumen Ejecutivo", "Detalles Técnicos", "Plan de Remediación"]
     }
   },
   "shortcuts": [
     {
-      "name": "Quick Security Assessment",
-      "description": "Run OWASP BALS assessment on application",
+      "name": "Evaluación Rápida de Seguridad",
+      "description": "Ejecuta evaluación rápida OWASP BALS",
       "command": "owasp-bals:quick-assessment"
     },
     {
-      "name": "OWASP Top 10 Analysis",
-      "description": "Analyze application against all 10 OWASP vectors",
+      "name": "Análisis OWASP Top 10",
+      "description": "Analiza aplicación contra 10 vectores OWASP",
       "command": "owasp-bals:full-analysis"
     },
     {
-      "name": "Compliance Report",
-      "description": "Generate compliance report (PCI-DSS, GDPR, etc)",
+      "name": "Reporte de Cumplimiento",
+      "description": "Genera reporte de cumplimiento (PCI-DSS, GDPR, etc)",
       "command": "owasp-bals:compliance-report"
     },
     {
-      "name": "Vulnerability Scoring",
-      "description": "Score vulnerabilities using CVSS v3.1",
+      "name": "Scoring de Vulnerabilidades",
+      "description": "Califica vulnerabilidades con CVSS v3.1",
       "command": "owasp-bals:cvss-scoring"
     }
   ],
   "ai_prompts": [
     {
-      "name": "Security Assessment",
-      "template": "Perform a complete security assessment using OWASP BALS framework for {application}. Include all 10 vectors, CVSS scoring, and compliance mapping."
+      "name": "Evaluación de Seguridad",
+      "template": "Realiza una evaluación completa de seguridad usando OWASP BALS para {application}. Incluye los 10 vectores, scoring CVSS y mapeo de cumplimiento."
     },
     {
-      "name": "Specific Vector Testing",
-      "template": "Test {application} for {owasp_vector} using OWASP BALS methodology. Provide payloads, validation steps, CVSS score, and remediation."
+      "name": "Testing de Vector Específico",
+      "template": "Prueba {application} para {owasp_vector} usando OWASP BALS. Proporciona payloads, pasos de validación, score CVSS y remediación."
     },
     {
-      "name": "Executive Report",
-      "template": "Generate an executive security report for {application} using OWASP BALS. Include risk matrix, findings summary, compliance gaps, and action plan."
+      "name": "Reporte Ejecutivo",
+      "template": "Genera reporte de seguridad ejecutivo para {application} usando OWASP BALS. Incluye matriz de riesgo, hallazgos principales, brechas de cumplimiento y plan de acción."
     },
     {
-      "name": "CI/CD Security Integration",
-      "template": "Set up OWASP BALS security scanning in CI/CD pipeline for {application} using AWS CodeBuild and CodePipeline."
+      "name": "Integración CI/CD",
+      "template": "Configura escaneo automático de seguridad OWASP BALS en pipeline CI/CD de {application} usando AWS CodeBuild y CodePipeline."
     }
   ],
   "aws_integration": {
     "security_hub": {
       "enabled": true,
-      "description": "Integrate findings with AWS Security Hub"
+      "description": "Integra hallazgos con AWS Security Hub"
     },
     "eventbridge": {
       "enabled": true,
-      "description": "Publish findings to EventBridge for automation"
+      "description": "Publica hallazgos en EventBridge para automatización"
     },
     "sns": {
       "enabled": true,
-      "description": "Send notifications via SNS"
+      "description": "Envía notificaciones vía SNS"
     },
     "s3": {
       "enabled": true,
-      "description": "Store reports in S3"
+      "description": "Almacena reportes en S3"
     }
   },
   "permissions": [
