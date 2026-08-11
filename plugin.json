@@ -1,4 +1,5 @@
-{
+﻿{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "owasp-bals",
   "version": "1.0.2",
   "description": "Professional OWASP Top Ten 2021 security testing framework for web applications. Includes CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation. Full Spanish support for Latin America.",
@@ -11,30 +12,9 @@
   "homepage": "https://github.com/Byronsasvin/owasp-bals",
   "repository": "https://github.com/Byronsasvin/owasp-bals.git",
   "keywords": [
-    "owasp",
-    "security",
-    "seguridad",
-    "pruebas",
-    "testing",
-    "penetración",
-    "pentest",
-    "vulnerabilidades",
-    "vulnerabilities",
-    "cvss",
-    "cumplimiento",
-    "compliance",
-    "pci-dss",
-    "gdpr",
-    "hipaa",
-    "nist",
-    "iso27001",
-    "evaluación",
-    "auditoría",
-    "inyección",
-    "injection",
-    "xss",
-    "autenticación",
-    "aws"
+    "owasp", "security", "seguridad", "testing", "pentest",
+    "vulnerabilities", "cvss", "compliance", "pci-dss", "gdpr",
+    "hipaa", "nist", "iso27001", "injection", "xss", "aws"
   ],
   "capabilities": {
     "agentSkills": true,
