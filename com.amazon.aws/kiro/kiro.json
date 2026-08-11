@@ -1,9 +1,10 @@
 {
   "kiroid": "1.0.0",
   "name": "OWASP BALS",
-  "displayName": "OWASP BALS - Poder de Pruebas de Seguridad",
-  "description": "Marco profesional de pruebas de seguridad OWASP Top Ten 2021 para Kiro IDE, con scoring CVSS v3.1 e integración con AWS",
-  "category": "Seguridad",
+  "displayName": "OWASP BALS - Security Testing Power",
+  "description": "Professional OWASP Top Ten 2021 security testing framework for web applications. Includes CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation. Built for development and security teams in Latin America — full Spanish support.",
+  "icon": "../../icon.svg",
+  "category": "Security",
   "type": "power",
   "author": {
     "name": "Byron Antonio Lainez Sasvin",

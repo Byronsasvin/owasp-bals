@@ -1,8 +1,9 @@
 {
   "name": "owasp-bals",
-  "version": "1.0.0",
-  "displayName": "OWASP BALS - Marco de Pruebas de Seguridad",
-  "description": "Marco profesional de pruebas de seguridad OWASP Top Ten 2021 para aplicaciones web. Incluye scoring CVSS v3.1, mapeo de cumplimiento normativo (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68 items de checklist, 25+ payloads reales y generación de reportes ejecutivos. Diseñado para equipos de desarrollo y seguridad en Latinoamérica.",
+  "version": "1.0.2",
+  "displayName": "OWASP BALS - Security Testing Power",
+  "description": "Professional OWASP Top Ten 2021 security testing framework for web applications. Includes CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation. Full Spanish support for Latin America.",
+  "icon": "./icon.svg",
   "license": "GPL-3.0-or-later",
   "author": {
     "name": "Byron Antonio Lainez Sasvin",
