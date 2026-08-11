@@ -1,8 +1,8 @@
 # OWASP BALS — Security Testing Power
 
-> 🌐 [English version below](#english) | Versión en español arriba
+Professional web application security testing framework for Kiro IDE. Test applications against OWASP Top Ten 2021, calculate CVSS v3.1 scores, verify compliance requirements (PCI-DSS, GDPR, HIPAA), and generate executive reports.
 
-**Keywords**: owasp, seguridad, security, pruebas, testing, penetración, pentest, vulnerabilidades, vulnerabilities, cvss, cumplimiento, compliance, pci-dss, gdpr, hipaa, nist, iso27001, evaluación, auditoría, inyección, injection, xss, autenticación, authentication
+**Keywords**: owasp, security, testing, pentest, vulnerabilities, cvss, compliance, pci-dss, gdpr, hipaa, nist, iso27001, injection, xss, authentication, seguridad, pruebas, vulnerabilidades, cumplimiento
 
 ---
 
