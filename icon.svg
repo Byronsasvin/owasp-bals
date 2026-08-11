@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C92A2A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1a1a1a"/>
+  
+  <!-- Shield Symbol -->
+  <path d="M100 20 L140 40 L140 100 C140 140 100 170 100 170 C100 170 60 140 60 100 L60 40 Z" 
+        fill="url(#grad1)" stroke="#FF6B6B" stroke-width="2"/>
+  
+  <!-- Lock Symbol Inside Shield -->
+  <rect x="85" y="90" width="30" height="35" rx="3" fill="none" stroke="#FFF" stroke-width="2"/>
+  <circle cx="100" cy="95" r="6" fill="none" stroke="#FFF" stroke-width="2"/>
+  <line x1="94" y1="110" x2="106" y2="110" stroke="#FFF" stroke-width="2"/>
+  
+  <!-- OWASP text hint -->
+  <text x="100" y="195" font-size="8" fill="#FF6B6B" text-anchor="middle" font-weight="bold">OWASP BALS</text>
+</svg>
