@@ -12,6 +12,39 @@ Professional web application security testing framework for Kiro IDE. Test appli
 
 ---
 
+## 🚀 Inicio Rápido — Cómo hacer tu primer escaneo
+
+Copia cualquiera de estos prompts directamente en el chat de Kiro:
+
+**Escaneo básico (recomendado para empezar):**
+```
+Realiza una evaluación de seguridad básica de [URL o nombre de tu app].
+Dime cuáles son los 3 riesgos más críticos y cómo solucionarlos.
+```
+
+**Escaneo de un endpoint específico:**
+```
+Evalúa el endpoint [POST /api/login] de mi aplicación.
+¿Tiene vulnerabilidades de inyección SQL o autenticación rota?
+Muéstrame los payloads de prueba y cómo remediar cada hallazgo.
+```
+
+**Escaneo completo con reporte:**
+```
+Haz una evaluación completa OWASP Top Ten de [URL].
+Incluye score CVSS para cada hallazgo y un plan de remediación priorizado.
+```
+
+**Si nunca hiciste un pentest antes:**
+```
+Soy nuevo en pruebas de seguridad. Tengo una app web en [URL o descripción].
+¿Por dónde empiezo? Guíame paso a paso usando OWASP BALS.
+```
+
+> Reemplaza `[URL]`, `[nombre de tu app]` o `[endpoint]` con tu información real.
+
+---
+
 ## ¿Qué es este Power?
 
 OWASP BALS es un marco profesional de pruebas de seguridad para aplicaciones web, integrado directamente en Kiro. Te permite realizar evaluaciones de seguridad completas siguiendo la metodología OWASP Top Ten 2021, calcular scores CVSS v3.1, verificar cumplimiento normativo y generar reportes ejecutivos, sin salir del IDE.
