@@ -1,8 +1,14 @@
+---
+name: "owasp-bals"
+displayName: "OWASP BALS - Security Testing"
+description: "Professional OWASP Top Ten 2021 security testing framework for web applications. CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation."
+keywords: ["owasp", "security", "seguridad", "testing", "pentest", "vulnerabilities", "cvss", "compliance", "pci-dss", "gdpr", "hipaa", "nist", "iso27001", "injection", "xss", "authentication"]
+author: "Byron Antonio Lainez Sasvin"
+---
+
 # OWASP BALS — Security Testing Power
 
 Professional web application security testing framework for Kiro IDE. Test applications against OWASP Top Ten 2021, calculate CVSS v3.1 scores, verify compliance requirements (PCI-DSS, GDPR, HIPAA), and generate executive reports.
-
-**Keywords**: owasp, security, testing, pentest, vulnerabilities, cvss, compliance, pci-dss, gdpr, hipaa, nist, iso27001, injection, xss, authentication, seguridad, pruebas, vulnerabilidades, cumplimiento
 
 ---
 
