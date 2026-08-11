@@ -1,6 +1,8 @@
-# OWASP BALS - Security Testing Power
+# OWASP BALS — Security Testing Power
 
-**Keywords**: owasp, seguridad, security, pruebas, testing, penetración, pentest, vulnerabilidades, vulnerabilities, cvss, cumplimiento, compliance, pci-dss, gdpr, hipaa, nist, iso27001, evaluación, auditoría, inyección, injection, xss, autenticación
+> 🌐 [English version below](#english) | Versión en español arriba
+
+**Keywords**: owasp, seguridad, security, pruebas, testing, penetración, pentest, vulnerabilidades, vulnerabilities, cvss, cumplimiento, compliance, pci-dss, gdpr, hipaa, nist, iso27001, evaluación, auditoría, inyección, injection, xss, autenticación, authentication
 
 ---
 
@@ -94,8 +96,6 @@ Genera matriz de cumplimiento con gaps identificados y roadmap de remediación.
 
 ## Metodología de 5 Fases
 
-Este Power sigue un proceso estructurado:
-
 ```
 Fase 1: Reconocimiento   → Identificar tecnologías y superficie de ataque
 Fase 2: Escaneo          → Detección automática de vulnerabilidades conocidas
@@ -155,9 +155,12 @@ Fase 5: Reportes         → Documentación profesional de hallazgos
 
 ## Recursos
 
-- [Skill técnica detallada](../../skills/owasp-security-testing/SKILL.md)
-- [Ejemplos prácticos con prompts completos](../../EXAMPLES.md)
-- [Configuración para Kiro IDE](../../com.amazon.aws/kiro/README.md)
+- [Skill técnica detallada](./skills/owasp-security-testing/SKILL.md)
+- [Ejemplos prácticos con prompts completos](./EXAMPLES.md)
+- [Plantilla: Reporte Ejecutivo](./templates/reporte-ejecutivo.md)
+- [Plantilla: Hallazgo Técnico](./templates/hallazgo-tecnico.md)
+- [Plantilla: Plan de Remediación](./templates/plan-remediacion.md)
+- [Configuración para Kiro IDE](./com.amazon.aws/kiro/README.md)
 - [OWASP Top Ten 2021](https://owasp.org/www-project-top-ten/)
 - [Calculadora CVSS v3.1](https://www.first.org/cvss/calculator/3.1)
 
@@ -173,5 +176,80 @@ Security Researcher · LATAM
 - Instagram: [@bals.sec](https://instagram.com/bals.sec)
 - Web: [byronlainez.click](https://byronlainez.click)
 
-**Licencia**: GPL-3.0-or-later  
-**Versión**: 1.0.0
+**Licencia**: GPL-3.0-or-later | **Versión**: 1.0.2
+
+---
+
+---
+
+## English
+
+<a name="english"></a>
+
+# OWASP BALS — Security Testing Power
+
+Professional web application security testing framework for Kiro IDE. Covers OWASP Top Ten 2021, CVSS v3.1 scoring, compliance mapping, and professional reporting.
+
+## What can you do with this Power?
+
+| Capability | Description |
+|------------|-------------|
+| **OWASP Top Ten Assessment** | Test all 10 critical attack vectors from 2021 |
+| **CVSS v3.1 Scoring** | Professional vulnerability severity scoring |
+| **Compliance Mapping** | PCI-DSS, GDPR, HIPAA, NIST, ISO 27001 validation |
+| **68-item Checklist** | Exhaustive verification per OWASP vector |
+| **25+ Real Payloads** | Ready-to-use SQL Injection, XSS, XXE examples |
+| **Professional Reports** | Executive summaries, technical findings, remediation plans |
+| **AWS Integration** | Security Hub, CodeBuild, CodePipeline |
+
+## Quick Start Prompts
+
+**Full Assessment**
+```
+Perform a complete security assessment of [URL or app name] using OWASP BALS.
+Include all 10 vectors, CVSS scoring, PCI-DSS and GDPR compliance mapping,
+and a remediation plan with timeline.
+```
+
+**Specific Vector**
+```
+Test [endpoint] for [vector name] vulnerabilities using OWASP BALS.
+Include test payloads, CVSS score, and remediation code examples.
+```
+
+**Executive Report**
+```
+Generate an executive security report for [application name] using OWASP BALS.
+Audience: [CTO / Board]. Include risk matrix, key findings, compliance gaps,
+and prioritized action plan.
+```
+
+**Compliance Audit**
+```
+Assess [application] against [PCI-DSS / GDPR / HIPAA] requirements.
+Generate compliance matrix with identified gaps and remediation roadmap.
+```
+
+## What this Power does NOT do
+
+- Does not execute real attacks against production systems
+- Does not replace a manual penetration test by a certified professional
+- Does not guarantee 100% vulnerability coverage
+- Does not access your infrastructure directly (guides the process only)
+
+**Important**: Only use this Power on systems you are authorized to test.
+
+## Resources
+
+- [Technical Skill Documentation](./skills/owasp-security-testing/SKILL.md)
+- [Usage Examples](./EXAMPLES.md)
+- [Templates](./templates/)
+- [Kiro IDE Configuration](./com.amazon.aws/kiro/README.md)
+- [OWASP Top Ten 2021](https://owasp.org/www-project-top-ten/)
+
+## Author
+
+**Byron Antonio Lainez Sasvin** — Security Researcher  
+GitHub: [@Byronsasvin](https://github.com/Byronsasvin) | Email: security@byronlainez.click
+
+**License**: GPL-3.0-or-later | **Version**: 1.0.2

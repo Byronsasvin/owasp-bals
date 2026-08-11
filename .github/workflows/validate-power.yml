@@ -1,0 +1,132 @@
+name: Validate OWASP BALS Power
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate Power Structure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate plugin.json is valid JSON
+        run: |
+          echo "Validando plugin.json..."
+          python3 -c "import json; json.load(open('plugin.json'))" && echo "✅ plugin.json es JSON válido"
+
+      - name: Validate required files exist
+        run: |
+          echo "Verificando archivos requeridos..."
+          files=(
+            "plugin.json"
+            "README.md"
+            "POWER.md"
+            "LICENSE"
+            "CHANGELOG.md"
+            "skills/owasp-security-testing/SKILL.md"
+            "com.amazon.aws/kiro/kiro.json"
+            "com.amazon.aws/kiro/README.md"
+            "EXAMPLES.md"
+            "templates/hallazgo-tecnico.md"
+            "templates/reporte-ejecutivo.md"
+            "templates/plan-remediacion.md"
+          )
+          all_ok=true
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "✅ $file"
+            else
+              echo "❌ FALTA: $file"
+              all_ok=false
+            fi
+          done
+          if [ "$all_ok" = false ]; then
+            echo ""
+            echo "ERROR: Hay archivos faltantes. Revisa la lista anterior."
+            exit 1
+          fi
+          echo ""
+          echo "✅ Todos los archivos requeridos están presentes."
+
+      - name: Validate plugin.json required fields
+        run: |
+          echo "Validando campos requeridos en plugin.json..."
+          python3 << 'EOF'
+          import json, sys
+
+          with open('plugin.json') as f:
+              data = json.load(f)
+
+          required = ['name', 'version', 'displayName', 'description', 'license', 'author', 'keywords']
+          missing = [field for field in required if field not in data]
+
+          if missing:
+              print(f"❌ Campos faltantes en plugin.json: {missing}")
+              sys.exit(1)
+
+          if not isinstance(data['keywords'], list) or len(data['keywords']) == 0:
+              print("❌ keywords debe ser una lista no vacía")
+              sys.exit(1)
+
+          if len(data['description']) < 50:
+              print("⚠️  La descripción es muy corta (menos de 50 caracteres)")
+
+          print("✅ plugin.json tiene todos los campos requeridos")
+          print(f"   - Nombre: {data['name']}")
+          print(f"   - Versión: {data['version']}")
+          print(f"   - Keywords: {len(data['keywords'])} keywords")
+          EOF
+
+      - name: Validate kiro.json
+        run: |
+          echo "Validando com.amazon.aws/kiro/kiro.json..."
+          python3 -c "import json; json.load(open('com.amazon.aws/kiro/kiro.json'))" && echo "✅ kiro.json es JSON válido"
+
+      - name: Validate SKILL.md has frontmatter
+        run: |
+          echo "Validando SKILL.md tiene frontmatter..."
+          if head -1 skills/owasp-security-testing/SKILL.md | grep -q "^---"; then
+            echo "✅ SKILL.md tiene frontmatter YAML"
+          else
+            echo "⚠️  SKILL.md no tiene frontmatter YAML (---)"
+          fi
+
+      - name: Check for broken internal links
+        run: |
+          echo "Verificando enlaces internos en POWER.md y README.md..."
+          python3 << 'EOF'
+          import re, os
+
+          files_to_check = ['POWER.md', 'README.md']
+          broken = []
+
+          for fname in files_to_check:
+              with open(fname) as f:
+                  content = f.read()
+              links = re.findall(r'\[.*?\]\(\.(.*?)\)', content)
+              for link in links:
+                  path = link.lstrip('/')
+                  if not os.path.exists(path):
+                      broken.append(f"{fname}: .{link}")
+
+          if broken:
+              print("⚠️  Posibles enlaces rotos:")
+              for b in broken:
+                  print(f"   - {b}")
+          else:
+              print("✅ No se detectaron enlaces internos rotos")
+          EOF
+
+      - name: Summary
+        run: |
+          echo ""
+          echo "════════════════════════════════════"
+          echo "  OWASP BALS Power — Validación OK  "
+          echo "════════════════════════════════════"
+          echo ""
