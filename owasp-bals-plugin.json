@@ -1,0 +1,199 @@
+{
+  "name": "owasp-bals",
+  "version": "1.0.0",
+  "displayName": "OWASP BALS - Security Testing Framework",
+  "description": "Professional security evaluation framework for web applications against OWASP Top Ten 2021. Developed by Byron Antonio Lainez Sasvin. Includes comprehensive testing methodology, vulnerability documentation with CVSS scoring, executive and technical reports, and remediation planning. Ready for production audits, compliance mapping, and DevSecOps pipeline integration.",
+  
+  "author": {
+    "name": "Byron Antonio Lainez Sasvin",
+    "email": "byron.lainez@sisap.com",
+    "url": "https://byronlainez.click",
+    "github": "bals-sec"
+  },
+  
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bals-sec/owasp-bals"
+  },
+  
+  "homepage": "https://github.com/bals-sec/owasp-bals",
+  "documentation": "https://github.com/bals-sec/owasp-bals#readme",
+  
+  "agentPluginsVersion": "1.0.0",
+  "specVersion": "1.0.0",
+  
+  "skills": [
+    {
+      "id": "owasp-bals:testing",
+      "name": "OWASP BALS Testing Framework",
+      "version": "1.0.0",
+      "path": "skills/owasp-bals",
+      "description": "Comprehensive framework for evaluating web application security against OWASP Top Ten 2021",
+      "icon": "shield",
+      "keywords": [
+        "security",
+        "web-security",
+        "penetration-testing",
+        "owasp",
+        "vulnerability-assessment",
+        "compliance",
+        "devops",
+        "secdevops",
+        "risk-management"
+      ],
+      "capabilities": [
+        "security-testing",
+        "vulnerability-documentation",
+        "report-generation",
+        "compliance-mapping",
+        "remediation-planning"
+      ]
+    }
+  ],
+  
+  "mcp": {
+    "servers": [
+      {
+        "name": "owasp-bals-server",
+        "description": "MCP server for OWASP BALS security testing and reporting",
+        "type": "stdio",
+        "command": "node",
+        "args": ["scripts/mcp-server.js"],
+        "environment": {
+          "NODE_ENV": "production",
+          "OWASP_VERSION": "2021"
+        }
+      }
+    ]
+  },
+  
+  "compatibleClients": [
+    {
+      "name": "claude",
+      "minVersion": "2024.01",
+      "maxVersion": null,
+      "description": "Use as skill directly in Claude.ai"
+    },
+    {
+      "name": "kiro",
+      "minVersion": "1.0.0",
+      "maxVersion": null,
+      "description": "Deploy as Agent Plugin in Kiro for automated security assessments"
+    },
+    {
+      "name": "cursor",
+      "minVersion": "1.0.0",
+      "maxVersion": null,
+      "description": "Compatible through Agent Plugins Specification"
+    },
+    {
+      "name": "copilot",
+      "minVersion": "1.0.0",
+      "maxVersion": null,
+      "description": "GitHub Copilot integration via Agent Plugins"
+    }
+  ],
+  
+  "categories": [
+    "security",
+    "compliance",
+    "testing",
+    "development",
+    "operations"
+  ],
+  
+  "tags": [
+    "owasp-top-ten",
+    "security-testing",
+    "penetration-testing",
+    "vulnerability-assessment",
+    "risk-management",
+    "compliance",
+    "pci-dss",
+    "gdpr",
+    "nist",
+    "iso-27001",
+    "devops",
+    "secdevops",
+    "cvss",
+    "cwe",
+    "web-security",
+    "appsec",
+    "infosec"
+  ],
+  
+  "permissions": {
+    "network": true,
+    "readFiles": true,
+    "writeFiles": true,
+    "executeBinaries": false,
+    "accessEnv": ["OWASP_CONFIG", "REPORT_PATH"]
+  },
+  
+  "dependencies": {
+    "owasp-zap": ">=2.12.0",
+    "nuclei": ">=2.8.0"
+  },
+  
+  "resources": {
+    "documentation": {
+      "url": "https://github.com/bals-sec/owasp-bals/blob/main/README.md",
+      "title": "OWASP BALS Security Testing Framework"
+    },
+    "guide": {
+      "url": "https://github.com/bals-sec/owasp-bals/blob/main/SKILL.md",
+      "title": "Complete Testing Methodology"
+    },
+    "examples": {
+      "url": "https://github.com/bals-sec/owasp-bals/blob/main/EXAMPLES.md",
+      "title": "8 Real-World Use Cases with Prompts"
+    },
+    "integration": {
+      "url": "https://github.com/bals-sec/owasp-bals/blob/main/INTEGRATION.md",
+      "title": "Kiro Integration Guide"
+    }
+  },
+  
+  "support": {
+    "email": "security@byronlainez.click",
+    "issues": "https://github.com/bals-sec/owasp-bals/issues",
+    "slack": "#owasp-bals",
+    "responseTime": "48 hours"
+  },
+  
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/bals-sec"
+  },
+  
+  "changelog": "https://github.com/bals-sec/owasp-bals/blob/main/CHANGELOG.md",
+  
+  "security": {
+    "reportVulnerabilities": {
+      "email": "security@sisap.com",
+      "gpgKey": null,
+      "url": "https://github.com/bals-sec/owasp-bals/security/advisories/new"
+    },
+    "sandboxLevel": "medium",
+    "trustedPublisher": true
+  },
+  
+  "stats": {
+    "downloads": 0,
+    "rating": 0,
+    "reviews": 0,
+    "lastUpdated": "2026-01-15T00:00:00Z"
+  },
+  
+  "marketplace": {
+    "featured": true,
+    "trending": false,
+    "new": true,
+    "official": false
+  },
+  
+  "schema": {
+    "$schema": "https://agent-plugins.org/schemas/plugin.json"
+  }
+}
