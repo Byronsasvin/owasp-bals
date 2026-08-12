@@ -1,0 +1,12 @@
+{
+  "name": "owasp-bals",
+  "displayName": "OWASP BALS - Security Testing",
+  "description": "Professional OWASP Top Ten 2021 security testing framework for web applications. CVSS v3.1 scoring, compliance mapping (PCI-DSS, GDPR, HIPAA, NIST, ISO 27001), 68-item checklist, 25+ real payloads, and executive report generation.",
+  "version": "1.0.2",
+  "type": "power",
+  "category": "Security",
+  "author": {
+    "name": "Byron Antonio Lainez Sasvin",
+    "email": "security@byronlainez.click"
+  }
+}
